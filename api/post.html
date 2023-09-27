@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+<body>
+    
+    <form id="form" onsubmit="event.preventDefault();">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    <button type="submit" id="button" onclick="PostSignUp()">submit</button>
+     </form>
+
+     <div id="pesan"></div>
+
+<script type="module" src="./post.js"></script>
+
+</body>
+</html>
