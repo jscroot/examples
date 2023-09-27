@@ -1,13 +1,12 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
 import {setInner } from "https://jscroot.github.io/element/croot.js";
 
+let URLGeoJson = "https://jscroot.github.io/examples/api/data.json";
 
 get(URLGeoJson,isiTable);
 
 
-export let URLGeoJson = "https://jscroot.github.io/examples/api/data.json";
-
-export function isiTable(results){
+function isiTable(results){
     results.forEach(isiRow);
 }
 
@@ -17,9 +16,9 @@ function isiRow(value){
 }
 
 
-export let tableTag="tr";
-export let tableRowClass="tablekordinat";
-export let tableContent=`
+let tableTag="tr";
+let tableRowClass="tablekordinat";
+let tableContent=`
 <td>#TYPE#</td>
 <td>#NAME#</td>
 <td>#KORDINAT#</td>
