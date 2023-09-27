@@ -12,7 +12,7 @@ function responseData(results){
 }
 
 function isiRow(value){
-    let content=tableContent.replace("#TYPE#",value.type).replace("#NAME#",value.Phone_number).replace("#KORDINAT#",value.Location);
+    let content=tableContent.replace("#TYPE#",value.geometry.type).replace("#NAME#",value.properties.name).replace("#KORDINAT#",value.geometry.coordinates);
     console.log(content);
     //addChild("presensi",tableTag,tableRowClass,tableContent);
 }
