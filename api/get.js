@@ -14,7 +14,7 @@ function responseData(results){
 function isiRow(value){
     let content=tableContent.replace("#TYPE#",value.geometry.type).replace("#NAME#",value.properties.name).replace("#KORDINAT#",value.geometry.coordinates);
     console.log(content);
-    //addChild("presensi",tableTag,tableRowClass,tableContent);
+    addChild("presensi",tableTag,tableRowClass,tableContent);
 }
 
 
