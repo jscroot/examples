@@ -23,5 +23,3 @@ function isiRow(value){
     console.log(content);
     addChild("lokasi",tableTag,tableRowClass,content);
 }
-
-
