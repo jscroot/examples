@@ -3,7 +3,7 @@ import {setInner,addChild } from "https://jscroot.github.io/element/croot.js";
 
 let URLGeoJson = "https://jscroot.github.io/examples/api/data.json";
 let tableTag="tr";
-let tableRowClass="tablekordinat";
+let tableRowClass="content is-small";
 let tableTemplate=`
 <td>#TYPE#</td>
 <td>#NAME#</td>
