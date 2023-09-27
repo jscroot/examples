@@ -3,17 +3,18 @@ import {setInner,addChild } from "https://jscroot.github.io/element/croot.js";
 
 let URLGeoJson = "https://jscroot.github.io/examples/api/data.json";
 
-get(URLGeoJson,isiTable);
+get(URLGeoJson,responseData);
 
 
-function isiTable(results){
+function responseData(results){
     console.log(results.features);
-    //results.features.forEach(isiRow);
+    results.features.forEach(isiRow);
 }
 
 function isiRow(value){
     let content=tableContent.replace("#TYPE#",value.type).replace("#NAME#",value.Phone_number).replace("#KORDINAT#",value.Location);
-    addChild("presensi",tableTag,tableRowClass,tableContent);
+    console.log(content);
+    //addChild("presensi",tableTag,tableRowClass,tableContent);
 }
 
 
