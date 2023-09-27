@@ -7,7 +7,8 @@ get(URLGeoJson,isiTable);
 
 
 function isiTable(results){
-    results.features.forEach(isiRow);
+    console.log(results.features);
+    //results.features.forEach(isiRow);
 }
 
 function isiRow(value){
