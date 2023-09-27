@@ -6,11 +6,21 @@
 <body>
     
   <div class="field">
-        <label class="label" for="fname">First name:</label><br>
-        <input class="input" type="text" id="fname" name="fname"><br>
-        <label class="label" for="lname">Last name:</label><br>
+        <label class="label" for="fname">First name:</label>
+        <div class="control">
+        <input class="input" type="text" id="fname" name="fname">
+        </div>
+</div>
+<div class="field">
+        <label class="label" for="lname">Last name:</label>
+        <div class="control">
         <input class="input" type="text" id="lname" name="lname">
-    <button class="button is-link is-light" type="submit" id="button" onclick="PostSignUp()">submit</button>
+        </div>
+</div>
+<div class="field">
+  <div class="control">
+      <button class="button is-link is-light" type="submit" id="button" onclick="PostSignUp()">Submit</button>
+    </div>
   </div>
 
      <div id="pesan"></div>
