@@ -1,6 +1,6 @@
 # examples
 Vanilla JS ES6+ Example
 
-1. [Set Inner HTML on Div Element](./element/setinner.html)
-2. [GET data from json](./api/get.html)
-2. [POST data from HTML Form](./api/post.html)
+Section :
+1. [Element](./element/)
+2. [RESTFull API](./api/)
