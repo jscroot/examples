@@ -18,5 +18,5 @@ export function PostSignUp(){
 
 
 function responseData(result){
-    setInner("pesan",result.message);
+    setInner("pesan",result.success);
 }
