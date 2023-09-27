@@ -21,7 +21,7 @@ function responseData(results){
 function isiRow(value){
     let content=tableTemplate.replace("#TYPE#",value.geometry.type).replace("#NAME#",value.properties.name).replace("#KORDINAT#",value.geometry.coordinates);
     console.log(content);
-    addChild("lokasi",tableTag,tableRowClass,content);
+    addChild("table",tableTag,tableRowClass,content);
 }
 
 
