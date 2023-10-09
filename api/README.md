@@ -1,5 +1,10 @@
 # RESTFull API Example
 
 Method :
-1.| GET | [Demo](./get/) | [Source Code](https://github.com/jscroot/examples/tree/main/api/get)
-2.| POST | [Demo](./post/) | [Source Code](https://github.com/jscroot/examples/tree/main/api/post)
+
+## GET 
+1. From File - [Demo](./get/fromfile/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/get/fromfile)
+2. From Goocle Cloud Function - [Demo](./get/fromgcf/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/get/fromgcf)
+
+##
+POST - [Demo](./post/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/post)
