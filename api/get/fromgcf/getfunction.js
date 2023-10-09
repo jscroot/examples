@@ -1,7 +1,7 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
 import {setInner,addChild } from "https://jscroot.github.io/element/croot.js";
 
-export let URLGeoJson = "./data.json";
+export let URLGeoJson = "https://asia-southeast2-awangga.cloudfunctions.net/petapedia";
 export let tableTag="tr";
 export let tableRowClass="content is-small";
 export let tableTemplate=`
@@ -11,8 +11,8 @@ export let tableTemplate=`
 `
 
 export function responseData(results){
-    console.log(results.features);
-    results.features.forEach(isiRow);
+    console.log(results);
+    results.forEach(isiRow);
 }
 
 export function isiRow(value){
