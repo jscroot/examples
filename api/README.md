@@ -7,4 +7,5 @@ Method :
 2. From Goocle Cloud Function - [Demo](./get/fromgcf/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/get/fromgcf)
 
 ## POST
-1. Form Catch Response - [Demo](./post/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/post)
+1. Form Catch Response - [Demo](./post/toapi/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/post/toapi)
+2. Login and Save Token to Cookies - [Demo](./post/togcf/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/post/togcf)
