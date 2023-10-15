@@ -17,5 +17,5 @@ export default function PostSignUp(){
 
 
 function responseData(result){
-    setInner("pesan",result.success);
+    setInner("pesan",result.message);
 }
