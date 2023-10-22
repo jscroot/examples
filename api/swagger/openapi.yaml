@@ -93,8 +93,6 @@ components:
       properties:
         type:
           type: string
-        properties:
-          type: string
         geometry:
           type: object
           properties:
