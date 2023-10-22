@@ -16,8 +16,6 @@ externalDocs:
   url: http://swagger.io
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
-  - url: https://gcfunction.swagger.io/api/v3
-  - url: https://brey.swagger.io/api/v3
 tags:
   - name: data
     description: Data Geo Spasial
