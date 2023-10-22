@@ -1,12 +1,11 @@
 import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
 
-window.onload = function () {
-    // Begin Swagger UI call region
-    window.ui = ui
-}
+
+window.ui = setSwagger();
+window.onload = setSwagger();
 
 
-export function onClosePopupClick() {
+export function setSwagger() {
     const ui = SwaggerUIBundle({
         url: "./openapi.yaml", //Location of Open API spec in the repo
         dom_id: '#swagger-ui',
@@ -19,4 +18,5 @@ export function onClosePopupClick() {
             SwaggerUIBundle.plugins.DownloadUrl
         ],
     })
+    return ui
 }
