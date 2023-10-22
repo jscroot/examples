@@ -1,42 +1,42 @@
 openapi: 3.0.3
 info:
-  title: Swagger JsCroot - OpenAPI 3.0
+  title: Dokumen API JsCroot - OpenAPI 3.0
   description: >-
     This is a sample API Docs
     Oke sip
-  termsOfService: http://swagger.io/terms/
+  termsOfService: http://vanillajskit.github.io
   contact:
-    email: apiteam@swagger.io
+    email: awangga@gmail.com
   license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
+    name: MIT License
+    url: https://opensource.org/license/mit/
   version: 1.0.11
 externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
+  description: Find out more about JSCroot
+  url: http://jscroot.github.io
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
 tags:
   - name: data
     description: Data Geo Spasial
     externalDocs:
-      description: Find out more
-      url: http://petapedia.github.io
+      description: Backend GCF GET
+      url: https://petapedia.github.io/gcf/get/
   - name: auth
     description: Auth to Access to API
     externalDocs:
-      description: How to get Paseto Token
-      url: http://jscroot.github.io/examples
+      description: Backend GCF POST
+      url: https://petapedia.github.io/gcf/post/
   - name: user
-    description: Operations about user
+    description: Get Token and Authorize
 paths:
   /petapedia:
     get:
       tags:
         - data
-      summary: Finds Peta by status
-      description: Multiple status values can be provided with comma separated strings
-      operationId: findPetsByStatus
+      summary: Get Data Geospasial
+      description: List Data Geospasial
+      operationId: getGeoJSON
       parameters:
         - name: status
           in: query
@@ -62,15 +62,15 @@ paths:
         '400':
           description: Invalid status value
       security:
-        - petstore_auth:
+        - token:
             - write:pets
             - read:pets
   /petapedia-post:
     post:
       tags:
         - auth
-      summary: Place an order for a pet
-      description: Place a new order in the store
+      summary: Login get Token
+      description: Login and Get User Token
       operationId: placeOrder
       requestBody:
         content:
@@ -96,7 +96,17 @@ components:
         properties:
           type: string
         geometry:
-          type: string
+          type: object
+          properties:
+            type: 
+              type: string
+            coordinates: 
+              type: array
+        properties:
+          type: object
+          properties:
+            name:
+              type: string
     Auth:
       type: object
       properties:
@@ -110,8 +120,8 @@ components:
       type: object
       properties:
         status:
-          type: string
-          example: fehguy
+          type: bool
+          example: false
         message:
           type: string
           example: fehguy
@@ -119,13 +129,10 @@ components:
           type: string
           example: fehguy
   requestBodies:
-    Pet:
-      description: Pet object that needs to be added to the store
+    AuthReq:
+      description: Request Authentication
       content:
         application/json:
-          schema:
-            $ref: '#/components/schemas/Auth'
-        application/xml:
           schema:
             $ref: '#/components/schemas/Auth'
     UserArray:
@@ -137,15 +144,7 @@ components:
             items:
               $ref: '#/components/schemas/AuthResponse'
   securitySchemes:
-    petstore_auth:
-      type: oauth2
-      flows:
-        implicit:
-          authorizationUrl: https://petstore3.swagger.io/oauth/authorize
-          scopes:
-            write:pets: modify pets in your account
-            read:pets: read your pets
-    api_key:
+    token:
       type: apiKey
-      name: api_key
+      name: token
       in: header
