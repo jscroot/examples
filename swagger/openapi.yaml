@@ -25,8 +25,8 @@ tags:
   - name: auth
     description: Auth to Access to API
     externalDocs:
-      description: Find out more about our store
-      url: http://petapedia.github.io
+      description: How to get Paseto Token
+      url: http://jscroot.github.io/examples
   - name: user
     description: Operations about user
 paths:
