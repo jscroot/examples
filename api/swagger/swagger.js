@@ -1,7 +1,7 @@
 import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
 
 
-window.ui = setSwagger();
+//window.ui = setSwagger();
 window.onload = setSwagger();
 
 
