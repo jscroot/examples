@@ -1,6 +1,6 @@
 # RESTFull API Example
 
-Method :
+Swagger Documentation on Github Pages : [Demo](./swagger/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/swagger)
 
 ## GET 
 1. From File - [Demo](./get/fromfile/) - [Source Code](https://github.com/jscroot/examples/tree/main/api/get/fromfile)
