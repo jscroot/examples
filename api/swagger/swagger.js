@@ -1,3 +1,5 @@
+import { SwaggerUIBundle, SwaggerUIStandalonePreset } from "https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js"
+
 window.onload = function () {
     // Begin Swagger UI call region
     const ui = SwaggerUIBundle({
