@@ -1,5 +1,6 @@
 import swaggerUiDist from 'https://cdn.skypack.dev/swagger-ui-dist';
-import { SwaggerUIBundle, SwaggerUIStandalonePreset } from "swagger-ui-dist";
+import swaggerUi from 'https://cdn.skypack.dev/swagger-ui';
+import { SwaggerUIBundle, SwaggerUIStandalonePreset } from "https://cdn.skypack.dev/swagger-ui";
 
 window.onload = function () {
     // Begin Swagger UI call region
