@@ -34,7 +34,7 @@ paths:
     get:
       tags:
         - data
-      summary: Finds Pets by status
+      summary: Finds Peta by status
       description: Multiple status values can be provided with comma separated strings
       operationId: findPetsByStatus
       parameters:
