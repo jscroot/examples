@@ -1,3 +1,5 @@
+import { SwaggerUIBundle } from "https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"
+
 window.onload = function () {
     // Begin Swagger UI call region
     const ui = SwaggerUIBundle({
