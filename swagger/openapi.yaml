@@ -58,12 +58,12 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Pet'
+                  $ref: '#/components/schemas/Peta'
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Pet'
+                  $ref: '#/components/schemas/Peta'
         '400':
           description: Invalid status value
       security:
@@ -120,7 +120,7 @@ components:
             name: addresses
             wrapped: true
           items:
-            $ref: '#/components/schemas/Address'
+            $ref: '#/components/schemas/Peta'
       xml:
         name: customer
   requestBodies:
