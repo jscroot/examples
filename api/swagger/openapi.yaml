@@ -37,19 +37,6 @@ paths:
       summary: Get Data Geospasial
       description: List Data Geospasial
       operationId: getGeoJSON
-      parameters:
-        - name: status
-          in: query
-          description: Status values that need to be considered for filter
-          required: false
-          explode: true
-          schema:
-            type: string
-            default: available
-            enum:
-              - available
-              - pending
-              - sold
       responses:
         '200':
           description: successful operation
@@ -71,7 +58,7 @@ paths:
         - auth
       summary: Login get Token
       description: Login and Get User Token
-      operationId: placeOrder
+      operationId: authService
       requestBody:
         content:
           application/json:
