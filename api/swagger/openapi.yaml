@@ -13,7 +13,7 @@ info:
     url: https://pkg.go.dev/github.com/petapedia/peda
   version: 1.0.11
 externalDocs:
-  description: Source Code Endpoint Backend GCF
+  description: Repo GCF
   url: https://petapedia.github.io/gcf/
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
