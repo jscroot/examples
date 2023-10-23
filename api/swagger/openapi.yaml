@@ -2,17 +2,18 @@ openapi: 3.0.3
 info:
   title: Dokumen API Cloud Function - OpenAPI 3.0
   description: >-
-    This is a sample API Docs
-    Oke sip ini source code nya
+    Jelaskan disini apa saja yang perlu dijelaskan
+    termasuk informasi yang diperlukan untuk dinilai
+    term of service isi dari link repo dari swagger ini
   termsOfService: https://github.com/jscroot/examples/tree/main/api/swagger
   contact:
     email: awangga@gmail.com
   license:
-    name: MIT License
+    name: MIT License Package
     url: https://opensource.org/license/mit/
   version: 1.0.11
 externalDocs:
-  description: Find out more about backend
+  description: Source Code Endpoint Backend GCF
   url: https://petapedia.github.io/gcf/
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
