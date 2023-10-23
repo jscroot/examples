@@ -3,8 +3,8 @@ info:
   title: Dokumen API Cloud Function - OpenAPI 3.0
   description: >-
     This is a sample API Docs
-    Oke sip
-  termsOfService: http://vanillajskit.github.io
+    Oke sip ini source code nya
+  termsOfService: https://github.com/jscroot/examples/tree/main/api/swagger
   contact:
     email: awangga@gmail.com
   license:
@@ -20,12 +20,12 @@ tags:
   - name: data
     description: Data Geo Spasial
     externalDocs:
-      description: Backend GCF GET
+      description: Deskripsi dan Kode Program
       url: https://petapedia.github.io/gcf/get/
   - name: auth
     description: Auth to Access to API
     externalDocs:
-      description: Backend GCF POST
+      description: Deskripsi dan Kode Program
       url: https://petapedia.github.io/gcf/post/
   - name: user
     description: Get Token and Authorize
