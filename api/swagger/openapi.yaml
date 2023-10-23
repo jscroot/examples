@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Dokumen API JsCroot - OpenAPI 3.0
+  title: Dokumen API Cloud Function - OpenAPI 3.0
   description: >-
     This is a sample API Docs
     Oke sip
