@@ -49,10 +49,6 @@ paths:
                   $ref: '#/components/schemas/Peta'
         '400':
           description: Invalid status value
-      security:
-        - token:
-            - write:pets
-            - read:pets
   /petapedia-post:
     post:
       tags:
@@ -74,6 +70,10 @@ paths:
                 $ref: '#/components/schemas/AuthResponse'
         '405':
           description: Invalid input
+      security:
+        - token:
+            - write:apiKey
+            - read:apiKey
 components:
   schemas:
     Peta:
