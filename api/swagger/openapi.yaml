@@ -12,8 +12,8 @@ info:
     url: https://opensource.org/license/mit/
   version: 1.0.11
 externalDocs:
-  description: Find out more about JSCroot
-  url: http://jscroot.github.io
+  description: Find out more about Backend
+  url: https://petapedia.github.io/gcf/
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
 tags:
