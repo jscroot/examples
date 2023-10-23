@@ -1,4 +1,5 @@
-import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
+import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist';
+//import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
 
 
 
