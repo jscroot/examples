@@ -12,7 +12,7 @@ info:
     url: https://opensource.org/license/mit/
   version: 1.0.11
 externalDocs:
-  description: Find out more about Backend
+  description: Find out more about backend
   url: https://petapedia.github.io/gcf/
 servers:
   - url: https://asia-southeast2-awangga.cloudfunctions.net
