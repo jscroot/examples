@@ -15,6 +15,7 @@ export const UIData = SwaggerUIBundle({
     plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
     ],
+ layout: "StandaloneLayout"
 });
 
 export function setSwagger() {
