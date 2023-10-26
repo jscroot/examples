@@ -13,7 +13,7 @@ export const UIData = SwaggerUIBundle({
     ],
     plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
-    ],
+    ]
 });
 
 export function setSwagger() {
