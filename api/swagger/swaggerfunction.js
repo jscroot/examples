@@ -1,6 +1,5 @@
 import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
-
-
+import StandaloneLayout from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-standalone-preset.js';
 
 export let URLData = "./openapi.yaml";
 
