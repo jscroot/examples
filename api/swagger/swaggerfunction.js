@@ -1,5 +1,5 @@
 import SwaggerUIBundle from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-bundle.js';
-import StandaloneLayout from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-standalone-preset.js';
+import SwaggerUIStandalonePreset from 'https://cdn.skypack.dev/swagger-ui-dist/swagger-ui-standalone-preset.js';
 
 export let URLData = "./openapi.yaml";
 
@@ -9,7 +9,7 @@ export const UIData = SwaggerUIBundle({
     deepLinking: true,
     presets: [
         SwaggerUIBundle.presets.apis,
-        SwaggerUIBundle.SwaggerUIStandalonePreset
+        SwaggerUIStandalonePreset
     ],
     plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
