@@ -9,12 +9,11 @@ export const UIData = SwaggerUIBundle({
     deepLinking: true,
     presets: [
         SwaggerUIBundle.presets.apis,
-        SwaggerUIStandalonePreset
+        SwaggerUIBundle.SwaggerUIStandalonePreset
     ],
     plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
     ],
- layout: "StandaloneLayout"
 });
 
 export function setSwagger() {
