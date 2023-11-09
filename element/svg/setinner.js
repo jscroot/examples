@@ -2,8 +2,8 @@ import { setInner } from "https://jscroot.github.io/element/croot.js";
 import * as croot from "https://jscroot.github.io/element/croot.js";
 
 
-setInner("demo",svg);
-croot.setInner("demo2",svg);
+setInner("demo","anu");
+croot.setInner("demo2","inu");
 
 updateCanvas("apa maksude","myCanvas");
 
