@@ -289,8 +289,6 @@ export default function PostSignUp(){
 
 }
 
-
-
 function responseData(result){
     setInner("pesan",result.message);
     setCookieWithExpireHour("token",result.token,2);
