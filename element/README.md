@@ -31,6 +31,8 @@ croot.setInner("demo2","Dari croot.js import fungsi dengan nama croot");
 
 ## SVG
 
+[Demo](./svg/) and [Source Code](https://github.com/jscroot/examples/tree/main/element/svg)
+
 index.html  
 ```html
 <!DOCTYPE html>
