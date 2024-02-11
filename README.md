@@ -18,6 +18,29 @@ if(!getCookie("login")){
 }
 ```
 
+## Form Handling
+Get data from Form and Post to the server
+```js
+import {setInner,getValue} from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
+import { postWithToken } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
+
+function PostSignUp(){
+    let datainjson = {
+        "nama": getValue("nama"),
+        "email": getValue("email"),
+        "phone":getValue("phone"),
+        "nik":getValue("nik"),
+        "pekerjaan":getValue("pekerjaan"),
+        "alamat":getValue("alamat")
+    }
+    postWithToken("https://ped.fly.dev/auth/userdata","login",getCookie("login"),datainjson,responseFunction);
+}
+
+function responseFunction(result){
+    console.log(result);
+}
+```
+
 ## Async Handling
 This is a sample of a four-step run of the js command, where js can be run in serial and parallel mode:
 ```js
