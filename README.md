@@ -4,3 +4,24 @@ Vanilla JS ES6+ Example
 Section :
 1. [Element](./element/)
 2. [RESTFull API](./api/)
+
+This is a sample of a four-step run of the js command, where js can be run in serial and parallel mode:
+```js
+import {functionName, runFunction} from "https://cdn.jsdelvr.com/gh/jscroot/croot.js";
+// Step 1: run and wait until finish execute
+await functionName(arg);
+// Step 2: Just run without waiting until finished, immediately go to the next step
+runFunction(arg);
+// Step 3: Run after HTML loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // initial HTML document has been completely loaded and parsed, without waiting
+  // for stylesheets, images, and subframes to finish loading
+  console.log('DOM fully loaded and parsed');
+});
+// Step 4: Run after all loaded
+window.addEventListener('load', (event) => {
+    //This includes after-all assets like images, scripts, and CSS files.
+    //Loaded
+    console.log('The page has fully loaded');
+});
+```
