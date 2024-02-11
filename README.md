@@ -4,7 +4,7 @@ Vanilla JS ES6+ Example
 ## Section Details
 Section :
 1. [Element](./element/)
-2. [RESTFull API](./api/)
+2. [Form Handling and RESTFull API](./api/)
 
 ## Cookies based User Session Handling
 To check the login cookies and redirect to the login page if the login cookie doesn't exist
