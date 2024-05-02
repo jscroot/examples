@@ -1,8 +1,8 @@
 # examples
-Vanilla JS ES6+ Example
+Welcome to JSCroot Tutorial. To begin with this section you must know about Vanilla JS ES6+ script first. 
 
-## Section Details
-Section :
+## Section Steps
+Please follow every step in every section :
 1. [Element](./element/)
 2. [Form Handling and RESTFull API](./api/)
 
