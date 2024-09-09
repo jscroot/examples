@@ -16,6 +16,7 @@ Swal.fire({
         text: "Isi",
       });
 ```
+Lengkapnya [disini](sweetalert.js)
 
 ## Set
 
