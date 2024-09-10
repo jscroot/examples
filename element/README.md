@@ -10,11 +10,25 @@ import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@11/src/sweetalert2.js
 await addCSS("https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.css");
 
 
+if (result.status === 200) {
+    Swal.fire('Success', 'File uploaded successfully!', 'success');
+} else {
+    Swal.fire('Error', 'File upload failed!', 'error');
+}
+
+// Tampilkan SweetAlert loading sebelum memulai upload
 Swal.fire({
-        icon: "error",
-        title: "Judul",
-        text: "Isi",
-      });
+        title: 'Uploading...',
+        text: 'Please wait while your file is being uploaded.',
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        willOpen: () => {
+            Swal.showLoading(); // Tampilkan loading indicator
+        }
+});
+
+// Tutup SweetAlert loading setelah upload selesai
+Swal.close();
 ```
 Lengkapnya [disini](sweetalert.js)
 
