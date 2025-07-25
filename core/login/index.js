@@ -1,5 +1,5 @@
 import {setCookieWithExpireHour} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.js";
-import {onClick} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.js";
+import {onClick,getValue} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.js";
 import {postJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.js";
 import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.js";
 
