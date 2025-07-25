@@ -1,21 +1,19 @@
-import {getCookie} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.js";
-import {setInner} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.js";
-import {getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.js";
+import {setCookieWithExpireHour} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.js";
+import {onClick} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.js";
+import {postJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.js";
 import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.js";
 
-if (getCookie("login")===""){
-    redirect("/");
+onClick("submit",PostSignUp);
+
+function PostSignUp(){
+    let datainjson = {
+        "username": getValue("username"),
+        "password": getValue("password")
+    }
+    postJSON("https://ped.fly.dev/auth/userdata",datainjson,responseFunction);
 }
 
-getJSON("https://api.do.my.id/data/user","login",getCookie("login"),responseFunction)
-
 function responseFunction(result){
-    if (result.status === 404){
-        setInner("content","Silahkan lakukan pendaftaran terlebih dahulu "+result.data.name);
-        redirect("/signup");
-    }else{
-        setInner("content","Selamat datang "+result.data.name);
-        redirect("/dashboard");
-    }
     console.log(result);
+    setCookieWithExpireHour("token",result.data.token,2);
 }
