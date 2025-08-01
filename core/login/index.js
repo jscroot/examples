@@ -29,5 +29,5 @@ function responseFunction(result){
 }
 
 function runafterGetUsername(result){
-    Swal.fire(result.data.status, result.data.status.message + " : "+result.data.username, 'info');//success,warning,info,question
+    Swal.fire(result.data.status, result.data.message + " : "+result.data.username, 'info');//success,warning,info,question
 }
