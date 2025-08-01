@@ -25,7 +25,8 @@ function PostSignIn(){
 function responseFunction(result){
     console.log(result);
     setCookieWithExpireHour("token",result.data.token,2);
-    getJSON(urlBackend+"/login", runafterGetUsername, "Token", result.data.token);
+    let tokenValue=getCookie("token");
+    getJSON(urlBackend+"/login", runafterGetUsername, "Token",tokenValue);
 }
 
 function runafterGetUsername(result){
