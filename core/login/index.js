@@ -1,4 +1,4 @@
-import {setCookieWithExpireHour} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.min.js";
+import {setCookieWithExpireHour,getCookie} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.min.js";
 import {onClick,getValue,addCSS} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.min.js";
 import {postJSON,getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.min.js";
 //import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.min.js";
