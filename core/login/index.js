@@ -3,9 +3,9 @@ import {onClick,getValue} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/el
 import {postJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.js";
 import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.js";
 
-onClick("submit",PostSignUp);
+onClick("submit",PostSignIn);
 
-function PostSignUp(){
+function PostSignIn(){
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password")
