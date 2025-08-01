@@ -1,7 +1,7 @@
 import {setCookieWithExpireHour,getCookie} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/cookie.min.js";
 import {onClick,getValue,addCSS} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/element.min.js";
 import {postJSON,getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/api.min.js";
-//import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.min.js";
+import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.8/url.min.js";
 
 //start import Sweet Alert
 import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/src/sweetalert2.js';
@@ -33,7 +33,11 @@ function responseFunction(result){
     }
 }
 
-function runafterGetUsername(result){
+async function runafterGetUsername(result){
     console.log(result);
-    Swal.fire(result.data.status, result.data.message + " : "+result.data.username, 'info');//success,warning,info,question
+    const swalResult = await Swal.fire(result.data.status, result.data.message + " : "+result.data.username, 'success');//success,warning,info,question
+    if (swalResult.isConfirmed) {
+        // Aksi setelah user menekan OK
+        redirect("./dashboard");
+    }
 }
