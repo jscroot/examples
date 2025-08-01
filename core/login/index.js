@@ -30,5 +30,6 @@ function responseFunction(result){
 }
 
 function runafterGetUsername(result){
+    console.log(result);
     Swal.fire(result.data.status, result.data.message + " : "+result.data.username, 'info');//success,warning,info,question
 }
