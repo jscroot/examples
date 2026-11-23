@@ -1,4 +1,5 @@
 ---
+permalink: /
 redirect_to: https://croot.js.org/examples/
 ---
 
