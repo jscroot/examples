@@ -1,3 +1,9 @@
+---
+redirect_to: https://croot.js.org/examples/
+---
+
+> **JSCroot sekarang CrootJS.** Contoh-contoh sekarang ada di [croot.js.org/examples/](https://croot.js.org/examples/). Repo ini tidak diperbarui lagi; file lama tetap ada supaya situs yang masih memakainya tidak rusak.
+
 # examples
 Welcome to JSCroot Tutorial. To begin with this section you must know about Vanilla JS ES6+ script first. 
 

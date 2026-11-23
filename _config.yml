@@ -1,0 +1,3 @@
+# JSCroot sekarang CrootJS: halaman repo ini dialihkan ke croot.js.org (jekyll-redirect-from).
+plugins:
+  - jekyll-redirect-from
